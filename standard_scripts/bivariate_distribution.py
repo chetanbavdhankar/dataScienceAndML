@@ -1,17 +1,21 @@
 """
   Bivariate normal distribution
+  Author: Wojtek Krzemien
+  Date: 02.05 2019
+  Usage: python bivariate_distribution.py
 """
+
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-means = [1,3]
-covariance = [[5,0.3],[0.3,2]]
+means = [1, 3]
+covariance = [[5, 0.3], [0.3, 2]]
 samples = int(1e5)
 
-x,y = np.random.multivariate_normal(means, covariance, samples, 'raise').T
+x, y = np.random.multivariate_normal(means, covariance, samples, 'raise').T
 
-#Plottting
+# Plottting
 plt.hist2d(x, y, bins=(100, 100), cmap=plt.cm.jet)
 plt.axis('equal')
 plt.show()
