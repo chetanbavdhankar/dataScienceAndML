@@ -1,0 +1,13 @@
+List of files:
+***************
+run.py - main file that calls all other functions
+plot_data.py - scripts that plots the data from the file
+distance.py - calculation of distance between two vectors (TO IMPLEMENT)
+normalizeData.py - returns the normalized list of features X each  having the  mean 0 and sigma in the range of +-1 (TO IMPLEMENT)
+getNeighbours.py - returns all neighbors sorted by distance (TO IMPLEMENT)
+getKNNeighbours - returns k nearest neighbours (TO IMPLEMENT)
+majorityVote.py - returns the majority vote (TO IMPLEMENT)
+predict.py - returns prediction for new objects using kNN (TO IMPLEMENT)
+error.py - calculation of the mean squared error (TO IMPLEMENT)
+
+iris_data.csv - data to be used for our final classification 
